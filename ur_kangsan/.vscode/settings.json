@@ -1,0 +1,34 @@
+{
+    "python.autoComplete.extraPaths": [
+        "/home/thiago/ros2_ws/build/ur_kangsan",
+        "/home/thiago/ros2_ws/install/ur_kangsan/lib/python3.10/site-packages",
+        "/home/thiago/ros2_ws/build/rodu_gui",
+        "/home/thiago/ros2_ws/install/rodu_gui/lib/python3.10/site-packages",
+        "/home/thiago/ros2_ws/build/goyoung_gui",
+        "/home/thiago/ros2_ws/install/goyoung_gui/lib/python3.10/site-packages",
+        "/home/thiago/ros2_ws/install/goyoung_msgs/local/lib/python3.10/dist-packages",
+        "/home/thiago/ros2_ws/install/dobby_message/local/lib/python3.10/dist-packages",
+        "/home/thiago/ros2_ws/build/dobby_gui",
+        "/home/thiago/ros2_ws/install/dobby_gui/lib/python3.10/site-packages",
+        "/home/thiago/ros2_ws/build/dobby_detect",
+        "/home/thiago/ros2_ws/install/dobby_detect/lib/python3.10/site-packages",
+        "/opt/ros/humble/lib/python3.10/site-packages",
+        "/opt/ros/humble/local/lib/python3.10/dist-packages"
+    ],
+    "python.analysis.extraPaths": [
+        "/home/thiago/ros2_ws/build/ur_kangsan",
+        "/home/thiago/ros2_ws/install/ur_kangsan/lib/python3.10/site-packages",
+        "/home/thiago/ros2_ws/build/rodu_gui",
+        "/home/thiago/ros2_ws/install/rodu_gui/lib/python3.10/site-packages",
+        "/home/thiago/ros2_ws/build/goyoung_gui",
+        "/home/thiago/ros2_ws/install/goyoung_gui/lib/python3.10/site-packages",
+        "/home/thiago/ros2_ws/install/goyoung_msgs/local/lib/python3.10/dist-packages",
+        "/home/thiago/ros2_ws/install/dobby_message/local/lib/python3.10/dist-packages",
+        "/home/thiago/ros2_ws/build/dobby_gui",
+        "/home/thiago/ros2_ws/install/dobby_gui/lib/python3.10/site-packages",
+        "/home/thiago/ros2_ws/build/dobby_detect",
+        "/home/thiago/ros2_ws/install/dobby_detect/lib/python3.10/site-packages",
+        "/opt/ros/humble/lib/python3.10/site-packages",
+        "/opt/ros/humble/local/lib/python3.10/dist-packages"
+    ]
+}
