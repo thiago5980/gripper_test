@@ -446,7 +446,7 @@ void subscribe_topic_message(const std_msgs::msg::Int8::SharedPtr msg)
     keyInput = msg->data;
     RCLCPP_INFO(rclcpp::get_logger("rclcpp"), "I heard: '%d'", msg->data);
 }
-
+bool flag = false;
 int main(int argc, char** argv)
 {
   rclcpp::init(argc, argv);
@@ -508,13 +508,17 @@ int main(int argc, char** argv)
     
     if(keyInput == 1) //open
     {
+	  flag = true;
       EposMoveto(g_pKeyHandle, g_usNodeId, lErrorCode, 0);
+	  m_status = 0;
       //EposGoalCurrent(g_pKeyHandle, g_usNodeId, lErrorCode, 500);
       keyInput = 0;
     }
     else if(keyInput == 2) //close
     {
+	  flag = true;
       EposMoveto(g_pKeyHandle, g_usNodeId, lErrorCode, -170);
+	  m_status = 0;
       //EposGoalCurrent(g_pKeyHandle, g_usNodeId, lErrorCode, -1000);
       keyInput = 0;
     }
@@ -536,7 +540,13 @@ int main(int argc, char** argv)
       {
         msg << "Goal Reached" <<endl;
         std_msgs::msg::Int8 msg;
-        msg.data = 1;
+		if (flag)
+		{
+        	msg.data = 1;
+			flag = false;
+		}
+		else
+			msg.data = 0;
         gripper_end->publish(msg);
       }
       else
